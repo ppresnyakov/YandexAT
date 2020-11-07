@@ -43,7 +43,7 @@ public class Controller {
     @DeleteMapping (value = "/deletePet", consumes = "application/json", produces = "application/text")
     public String deletePet(@RequestBody Map<String, Integer> id)
     {   String TmpName = PetModel.getFromlist(id.get("id")).getName();
-        PetModel.delete(id.get("id"));
+        PetModel.deletePet(id.get("id"));
         return "Питомец " + TmpName + " был удалён.";
     }
 }

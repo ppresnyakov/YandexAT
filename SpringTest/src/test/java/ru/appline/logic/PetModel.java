@@ -30,7 +30,7 @@ public class PetModel implements Serializable {
     public static Map<Integer, Pet> getAll(){
         return model;
     }
-    public  static void  delete( int id){ model.remove(id);}
+    public  static void  deletePet( int id){ model.remove(id);}
 
 }
 
