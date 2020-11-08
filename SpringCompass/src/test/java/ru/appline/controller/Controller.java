@@ -37,23 +37,16 @@ public class Controller {
             int Degree1 = Integer.parseInt( DegreeArray[0]);
             int Degree2 = Integer.parseInt( DegreeArray[1]);
             DirectSide tmpSide = new DirectSide(Degree1, Degree2 );
-            if  (entry.getKey() == "Север"){
-                Model.put("Север", tmpSide  ) ;}
-            else if  (entry.getKey() == "Северо-восток"){
-                Model.put("Северо-восток", tmpSide  ) ;}
-            else if  (entry.getKey() == "Восток"){
-                Model.put("Восток", tmpSide  ) ;}
-            else if  (entry.getKey() == "Юго-Восток"){
-                Model.put("Юго-Восток", tmpSide  ) ;}
-            else if  (entry.getKey() == "Юг"){
-                Model.put("Юг", tmpSide  ) ;}
-            else if  (entry.getKey() == "Юго-запад"){
-                Model.put("Юго-запад", tmpSide  ) ;}
-            else if  (entry.getKey() == "Запад"){
-                Model.put("Запад", tmpSide  ) ;}
-            else if  (entry.getKey() == "Северо-Запад"){
-                Model.put("Северо-Запад", tmpSide  ) ;}
-            else msg = "Что то пошло не так";
+            switch (entry.getKey()){
+                case"Север": Model.put("Север", tmpSide  ); break;
+                case "Северо-восток": Model.put("Северо-восток", tmpSide  ) ; break;
+                case"Восток": Model.put("Восток", tmpSide  ) ; break;
+                case"Юго-Восток": Model.put("Юго-Восток", tmpSide  ) ; break;
+                case"Юг": Model.put("Юг", tmpSide  ) ; break;
+                case"Юго-запад": Model.put("Юго-запад", tmpSide  ) ; break;
+                case"Запад": Model.put("Запад", tmpSide  ) ; break;
+                case"Северо-Запад": Model.put("Северо-Запад", tmpSide  ) ; break;
+                default:  msg = "Что то пошло не так";}
             }  else msg = "У вас в одном и направлений количество углов не равно двум!";
     }
         return CompassModel.getAll();

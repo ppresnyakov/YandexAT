@@ -18,7 +18,7 @@ public class PetModel implements Serializable {
     public static PetModel getInstance(){
         return instance;
     }
-    public  static void  add(Pet pet, int id){
+    public  void  add(Pet pet, int id){
         model.put(id,pet);
     }
     public  static void  put( int id, Pet pet){

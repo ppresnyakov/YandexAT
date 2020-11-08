@@ -16,19 +16,19 @@ public class Controller {
 
     @PostMapping(value = "/createPet", consumes = "application/json", produces = "application/text")
     public static String createPet(@RequestBody Pet pet) {
-        PetModel.add(pet, newId.getAndDecrement());
+        petmodel.add(pet, newId.getAndDecrement());
         return "Питомец " + pet.getName() + " был успешно создан";
     }
 
     @GetMapping(value = "/getAll", produces = "application/json")
     public Map<Integer, Pet> getAll() {
-      return PetModel.getAll();
+      return petmodel.getAll();
     }
 
-    @GetMapping (value = "/getPet", consumes = "application/json", produces = "application/json")
-            public Pet getPet(@RequestBody Map<String, Integer> id)
+    @GetMapping (value = "/getPet", consumes = "application/text", produces = "application/json")
+            public Pet getPet(@RequestBody  String id)
     {
-        return petmodel.getFromlist(id.get("id"));
+        return petmodel.getFromlist(Integer.parseInt(id));
     }
 
 
@@ -40,10 +40,10 @@ public class Controller {
         PetModel.put(Integer.parseInt(PutPetRequest.get("id")),  NewPet);
         return "Питомец " + tmpName + " был заменён на " + NewPet.getName();
     }
-    @DeleteMapping (value = "/deletePet", consumes = "application/json", produces = "application/text")
-    public String deletePet(@RequestBody Map<String, Integer> id)
-    {   String TmpName = PetModel.getFromlist(id.get("id")).getName();
-        PetModel.deletePet(id.get("id"));
+    @DeleteMapping (value = "/deletePet", consumes = "application/text", produces = "application/text")
+    public String deletePet(@RequestBody String  id)
+    {   String TmpName = PetModel.getFromlist(Integer.parseInt(id)).getName();
+        PetModel.deletePet(Integer.parseInt(id));
         return "Питомец " + TmpName + " был удалён.";
     }
 }
