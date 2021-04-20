@@ -1,0 +1,59 @@
+{
+  "hash" : "e7105c43ada45c9f6e0006854ef1a1d95249231d",
+  "plugins" : {
+    "total" : {
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 1
+      },
+      "time" : {
+        "start" : 1618949793619,
+        "stop" : 1618949811672,
+        "duration" : 18053
+      }
+    },
+    "defects" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "count" : 1,
+        "uid" : "a6737f53830fcc9f",
+        "message" : "IllegalArgumentException: can't parse argument number: threshold",
+        "status" : "BROKEN"
+      } ]
+    },
+    "xunit" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "uid" : "125b9c9f8fd70479",
+        "title" : "Яндекс маркет",
+        "statistic" : {
+          "total" : 1,
+          "passed" : 0,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 0,
+          "broken" : 1
+        }
+      } ]
+    },
+    "behaviors" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "title" : "Яндекс маркет",
+        "statistic" : {
+          "total" : 1,
+          "passed" : 0,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 0,
+          "broken" : 1
+        }
+      } ]
+    },
+    "environment" : [ ]
+  }
+}

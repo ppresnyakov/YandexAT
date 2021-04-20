@@ -1,0 +1,458 @@
+{
+  "uid" : "a482b5fdb719efa3",
+  "name" : "Поиск товара(телевизор) с применением фильтра",
+  "title" : "Поиск товара(телевизор) с применением фильтра",
+  "time" : {
+    "start" : 1618949793619,
+    "stop" : 1618949811672,
+    "duration" : 18053
+  },
+  "summary" : {
+    "attachments" : 4,
+    "steps" : 25
+  },
+  "failure" : {
+    "message" : "IllegalArgumentException: can't parse argument number: threshold",
+    "stackTrace" : "java.lang.IllegalArgumentException: can't parse argument number: threshold\n\tat java.text.MessageFormat.makeFormat(MessageFormat.java:1429)\n\tat java.text.MessageFormat.applyPattern(MessageFormat.java:479)\n\tat java.text.MessageFormat.<init>(MessageFormat.java:362)\n\tat java.text.MessageFormat.format(MessageFormat.java:840)\n\tat ru.yandex.qatools.allure.aspects.AllureAspectUtils.getTitle(AllureAspectUtils.java:68)\n\tat ru.yandex.qatools.allure.aspects.AllureStepsAspects.createTitle(AllureStepsAspects.java:69)\n\tat ru.yandex.qatools.allure.aspects.AllureStepsAspects.stepStart(AllureStepsAspects.java:41)\n\tat yandex.market.steps.ProductPageSteps.checkItemsQuantity(ProductPageSteps.java:46)\n\tat yandex.market.steps.CucumberSteps.товаров_больше_чем(CucumberSteps.java:71)\n\tat ✽.Тогда товаров >= '12'(yandexTV.feature:20)\nCaused by: java.lang.NumberFormatException: For input string: \"threshold\"\n\tat java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.lang.Integer.parseInt(Integer.java:580)\n\tat java.lang.Integer.parseInt(Integer.java:615)\n\tat java.text.MessageFormat.makeFormat(MessageFormat.java:1427)\n\tat java.text.MessageFormat.applyPattern(MessageFormat.java:479)\n\tat java.text.MessageFormat.<init>(MessageFormat.java:362)\n\tat java.text.MessageFormat.format(MessageFormat.java:840)\n\tat ru.yandex.qatools.allure.aspects.AllureAspectUtils.getTitle(AllureAspectUtils.java:68)\n\tat ru.yandex.qatools.allure.aspects.AllureStepsAspects.createTitle(AllureStepsAspects.java:69)\n\tat ru.yandex.qatools.allure.aspects.AllureStepsAspects.stepStart(AllureStepsAspects.java:41)\n\tat yandex.market.steps.ProductPageSteps.checkItemsQuantity(ProductPageSteps.java:46)\n\tat yandex.market.steps.CucumberSteps.товаров_больше_чем(CucumberSteps.java:71)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\n"
+  },
+  "description" : {
+    "value" : null,
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "BROKEN",
+  "suite" : {
+    "uid" : "125b9c9f8fd70479",
+    "name" : "Яндекс маркет",
+    "title" : "Яндекс маркет"
+  },
+  "steps" : [ {
+    "name" : "Root step",
+    "title" : "Allure step processing error: if you see this step something went wrong.",
+    "time" : {
+      "start" : 1618949793614,
+      "stop" : 1618949810958,
+      "duration" : 17344
+    },
+    "summary" : {
+      "attachments" : 4,
+      "steps" : 22
+    },
+    "status" : "BROKEN",
+    "attachments" : [ {
+      "title" : "Скриншот в момент ошибки",
+      "source" : "69c4578b-d3f6-4229-8a1f-7b91ac3ed755-attachment.png",
+      "type" : "image/png",
+      "size" : 199313,
+      "uid" : "8868d3ba080f8099"
+    } ],
+    "steps" : [ {
+      "name" : "Когда перешел на сайт 'https://yandex.ru/'",
+      "title" : "Когда перешел на сайт 'https://yandex.ru/'",
+      "time" : {
+        "start" : 1618949796990,
+        "stop" : 1618949799013,
+        "duration" : 2023
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "Тогда заголовок главной страницы -  'Яндекс'",
+      "title" : "Тогда заголовок главной страницы -  'Яндекс'",
+      "time" : {
+        "start" : 1618949799014,
+        "stop" : 1618949799307,
+        "duration" : 293
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 1
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ {
+        "name" : "checkTitle[Яндекс]",
+        "title" : "Заголовок  открывшейся страницы = {title}",
+        "time" : {
+          "start" : 1618949799130,
+          "stop" : 1618949799307,
+          "duration" : 177
+        },
+        "summary" : {
+          "attachments" : 0,
+          "steps" : 0
+        },
+        "status" : "PASSED",
+        "attachments" : [ ],
+        "steps" : [ ]
+      } ]
+    }, {
+      "name" : "Когда нажат сервис - 'Маркет'",
+      "title" : "Когда нажат сервис - 'Маркет'",
+      "time" : {
+        "start" : 1618949799308,
+        "stop" : 1618949799495,
+        "duration" : 187
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 1
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ {
+        "name" : "clickOnService[Маркет]",
+        "title" : "Нажать на сервис - {service}",
+        "time" : {
+          "start" : 1618949799309,
+          "stop" : 1618949799494,
+          "duration" : 185
+        },
+        "summary" : {
+          "attachments" : 0,
+          "steps" : 0
+        },
+        "status" : "PASSED",
+        "attachments" : [ ],
+        "steps" : [ ]
+      } ]
+    }, {
+      "name" : "Тогда заголовок страницы маркета -  'Яндекс.Маркет — выбор и покупка товаров из проверенных интернет-магазинов'",
+      "title" : "Тогда заголовок страницы маркета -  'Яндекс.Маркет — выбор и покупка товаров из проверенных интернет-магазинов'",
+      "time" : {
+        "start" : 1618949799495,
+        "stop" : 1618949802089,
+        "duration" : 2594
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 1
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ {
+        "name" : "checkTitle[Яндекс.Маркет — выбор и покупка товаров из проверенных интернет-магазинов]",
+        "title" : "Заголовок  открывшейся страницы = {title}",
+        "time" : {
+          "start" : 1618949799497,
+          "stop" : 1618949802089,
+          "duration" : 2592
+        },
+        "summary" : {
+          "attachments" : 0,
+          "steps" : 0
+        },
+        "status" : "PASSED",
+        "attachments" : [ ],
+        "steps" : [ ]
+      } ]
+    }, {
+      "name" : "Когда нажат каталог - 'Электроника'",
+      "title" : "Когда нажат каталог - 'Электроника'",
+      "time" : {
+        "start" : 1618949802089,
+        "stop" : 1618949803684,
+        "duration" : 1595
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 1
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ {
+        "name" : "clickOnCatalog[Электроника]",
+        "title" : "Нажать на каталог {catalogName}",
+        "time" : {
+          "start" : 1618949802090,
+          "stop" : 1618949803683,
+          "duration" : 1593
+        },
+        "summary" : {
+          "attachments" : 0,
+          "steps" : 0
+        },
+        "status" : "PASSED",
+        "attachments" : [ ],
+        "steps" : [ ]
+      } ]
+    }, {
+      "name" : "Тогда заголовок страницы каталога электроника -  'Электроника — купить на Яндекс.Маркете'",
+      "title" : "Тогда заголовок страницы каталога электроника -  'Электроника — купить на Яндекс.Маркете'",
+      "time" : {
+        "start" : 1618949803684,
+        "stop" : 1618949803697,
+        "duration" : 13
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 1
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ {
+        "name" : "checkTitle[Электроника — купить на Яндекс.Маркете]",
+        "title" : "Заголовок  открывшейся страницы = {title}",
+        "time" : {
+          "start" : 1618949803685,
+          "stop" : 1618949803697,
+          "duration" : 12
+        },
+        "summary" : {
+          "attachments" : 0,
+          "steps" : 0
+        },
+        "status" : "PASSED",
+        "attachments" : [ ],
+        "steps" : [ ]
+      } ]
+    }, {
+      "name" : "Когда нажат элемент каталога - 'Телевизоры'",
+      "title" : "Когда нажат элемент каталога - 'Телевизоры'",
+      "time" : {
+        "start" : 1618949803697,
+        "stop" : 1618949807361,
+        "duration" : 3664
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 1
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ {
+        "name" : "clickOnCatalogItem[Телевизоры]",
+        "title" : "Нажать на элемент каталога - {name}",
+        "time" : {
+          "start" : 1618949803698,
+          "stop" : 1618949807361,
+          "duration" : 3663
+        },
+        "summary" : {
+          "attachments" : 0,
+          "steps" : 0
+        },
+        "status" : "PASSED",
+        "attachments" : [ ],
+        "steps" : [ ]
+      } ]
+    }, {
+      "name" : "Тогда заголовок страницы каталога телевизоров содержит -  'Телевизоры — купить на Яндекс.Маркете'",
+      "title" : "Тогда заголовок страницы каталога телевизоров содержит -  'Телевизоры — купить на Яндекс.Маркете'",
+      "time" : {
+        "start" : 1618949807362,
+        "stop" : 1618949807375,
+        "duration" : 13
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 1
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ {
+        "name" : "checkTitle[Телевизоры — купить на Яндекс.Маркете]",
+        "title" : "Заголовок  открывшейся страницы = {title}",
+        "time" : {
+          "start" : 1618949807363,
+          "stop" : 1618949807375,
+          "duration" : 12
+        },
+        "summary" : {
+          "attachments" : 0,
+          "steps" : 0
+        },
+        "status" : "PASSED",
+        "attachments" : [ ],
+        "steps" : [ ]
+      } ]
+    }, {
+      "name" : "Когда установлен ценовой диапозон -  'Цена от','20000'",
+      "title" : "Когда установлен ценовой диапозон -  'Цена от','20000'",
+      "time" : {
+        "start" : 1618949807375,
+        "stop" : 1618949809025,
+        "duration" : 1650
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 1
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ {
+        "name" : "setPriceTo[Цена от, 20000]",
+        "title" : "Установить {priceType} - {priceValue}",
+        "time" : {
+          "start" : 1618949807376,
+          "stop" : 1618949809025,
+          "duration" : 1649
+        },
+        "summary" : {
+          "attachments" : 1,
+          "steps" : 0
+        },
+        "status" : "PASSED",
+        "attachments" : [ {
+          "title" : "getScreenshot",
+          "source" : "c7abe2fd-a59c-4f29-aa73-e20d6a442180-attachment.png",
+          "type" : "image/png",
+          "size" : 198764,
+          "uid" : "bfeaac9e727762ee"
+        } ],
+        "steps" : [ ]
+      } ]
+    }, {
+      "name" : "И выбран производитель 'Samsung'",
+      "title" : "И выбран производитель 'Samsung'",
+      "time" : {
+        "start" : 1618949809025,
+        "stop" : 1618949809938,
+        "duration" : 913
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 1
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ {
+        "name" : "selectManufacturer[Samsung]",
+        "title" : "Выбрать производителя - {name}",
+        "time" : {
+          "start" : 1618949809026,
+          "stop" : 1618949809938,
+          "duration" : 912
+        },
+        "summary" : {
+          "attachments" : 1,
+          "steps" : 0
+        },
+        "status" : "PASSED",
+        "attachments" : [ {
+          "title" : "getScreenshot",
+          "source" : "8f5c80fb-c806-4cef-80c5-766e4b734853-attachment.png",
+          "type" : "image/png",
+          "size" : 198853,
+          "uid" : "c4ad75e600ede2eb"
+        } ],
+        "steps" : [ ]
+      } ]
+    }, {
+      "name" : "И выбран производитель 'LG'",
+      "title" : "И выбран производитель 'LG'",
+      "time" : {
+        "start" : 1618949809938,
+        "stop" : 1618949810581,
+        "duration" : 643
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 1
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ {
+        "name" : "selectManufacturer[LG]",
+        "title" : "Выбрать производителя - {name}",
+        "time" : {
+          "start" : 1618949809939,
+          "stop" : 1618949810581,
+          "duration" : 642
+        },
+        "summary" : {
+          "attachments" : 1,
+          "steps" : 0
+        },
+        "status" : "PASSED",
+        "attachments" : [ {
+          "title" : "getScreenshot",
+          "source" : "19d216f1-7827-48a5-9c49-c50aa78c06b5-attachment.png",
+          "type" : "image/png",
+          "size" : 199313,
+          "uid" : "f954795c5227e695"
+        } ],
+        "steps" : [ ]
+      } ]
+    }, {
+      "name" : "Тогда товаров >= '12'",
+      "title" : "Тогда товаров >= '12'",
+      "time" : {
+        "start" : 1618949810582,
+        "stop" : 1618949810586,
+        "duration" : 4
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "BROKEN",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "Когда выполнен поиск товара под номером '0'",
+    "title" : "Когда выполнен поиск товара под номером '0'",
+    "time" : {
+      "start" : 1618949810958,
+      "stop" : 1618949810961,
+      "duration" : 3
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "CANCELED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Тогда название товара в списке под номером '0' не изменился",
+    "title" : "Тогда название товара в списке под номером '0' не изменился",
+    "time" : {
+      "start" : 1618949810961,
+      "stop" : 1618949810961,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "CANCELED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-RH62JMFF"
+  }, {
+    "name" : "thread",
+    "value" : "12724@LAPTOP-RH62JMFF.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "suite-name",
+    "value" : "Яндекс маркет"
+  }, {
+    "name" : "framework",
+    "value" : "CucumberJVM"
+  }, {
+    "name" : "feature",
+    "value" : "Яндекс маркет"
+  }, {
+    "name" : "story",
+    "value" : "Поиск товара(телевизор) с применением фильтра"
+  } ],
+  "parameters" : [ ]
+}

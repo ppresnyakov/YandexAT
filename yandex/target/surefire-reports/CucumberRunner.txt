@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: CucumberRunner
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 20.223 sec <<< FAILURE! - in CucumberRunner
+Тогда товаров >= '12'(Сценарий: Поиск товара(телевизор) с применением фильтра)  Time elapsed: 0.012 sec  <<< ERROR!
+java.lang.IllegalArgumentException: can't parse argument number: threshold
+Caused by: java.lang.NumberFormatException: For input string: "threshold"
+
+Сценарий: Поиск товара(телевизор) с применением фильтра  Time elapsed: 0.012 sec  <<< ERROR!
+java.lang.IllegalArgumentException: can't parse argument number: threshold
+Caused by: java.lang.NumberFormatException: For input string: "threshold"
+

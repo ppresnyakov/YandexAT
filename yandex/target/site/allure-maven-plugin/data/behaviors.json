@@ -1,0 +1,37 @@
+{
+  "features" : [ {
+    "title" : "Яндекс маркет",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 1
+    },
+    "stories" : [ {
+      "uid" : "44388dbb1632e7b6",
+      "title" : "Поиск товара(телевизор) с применением фильтра",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 1
+      },
+      "testCases" : [ {
+        "uid" : "a482b5fdb719efa3",
+        "name" : "Поиск товара(телевизор) с применением фильтра",
+        "title" : "Поиск товара(телевизор) с применением фильтра",
+        "time" : {
+          "start" : 1618949793619,
+          "stop" : 1618949811672,
+          "duration" : 18053
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    } ]
+  } ]
+}

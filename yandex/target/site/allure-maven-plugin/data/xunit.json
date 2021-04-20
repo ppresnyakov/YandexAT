@@ -1,0 +1,38 @@
+{
+  "time" : {
+    "start" : 1618949793619,
+    "stop" : 1618949811672,
+    "duration" : 18053
+  },
+  "testSuites" : [ {
+    "uid" : "125b9c9f8fd70479",
+    "name" : "Яндекс маркет",
+    "title" : "Яндекс маркет",
+    "time" : {
+      "start" : 1618949793619,
+      "stop" : 1618949811672,
+      "duration" : 18053
+    },
+    "statistic" : {
+      "total" : 1,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 1
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "a482b5fdb719efa3",
+      "name" : "Поиск товара(телевизор) с применением фильтра",
+      "title" : "Поиск товара(телевизор) с применением фильтра",
+      "time" : {
+        "start" : 1618949793619,
+        "stop" : 1618949811672,
+        "duration" : 18053
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    } ]
+  } ]
+}

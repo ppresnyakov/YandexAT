@@ -1,0 +1,14 @@
+yandex\market\pageObjects\Page.class
+yandex\market\steps\ElectronicsPageSteps.class
+yandex\market\pageObjects\MarketPage.class
+yandex\market\steps\MainPageSteps.class
+yandex\market\settings\TestProperties.class
+yandex\market\pageObjects\ElectronicsPage.class
+yandex\market\pageObjects\MainPage.class
+yandex\market\GeneralMethods.class
+yandex\market\util\AllureReporter.class
+yandex\market\steps\CucumberSteps.class
+yandex\market\steps\Hooks.class
+yandex\market\steps\MarketPageSteps.class
+yandex\market\pageObjects\ProductPage.class
+yandex\market\steps\ProductPageSteps.class

@@ -1,0 +1,20 @@
+{
+  "hosts" : [ {
+    "title" : "LAPTOP-RH62JMFF",
+    "threads" : [ {
+      "title" : "12724@LAPTOP-RH62JMFF.main(1)",
+      "testCases" : [ {
+        "uid" : "a482b5fdb719efa3",
+        "name" : "Поиск товара(телевизор) с применением фильтра",
+        "title" : "Поиск товара(телевизор) с применением фильтра",
+        "time" : {
+          "start" : 1618949793619,
+          "stop" : 1618949811672,
+          "duration" : 18053
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    } ]
+  } ]
+}

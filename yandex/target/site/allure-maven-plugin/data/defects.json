@@ -1,0 +1,29 @@
+{
+  "defectsList" : [ {
+    "title" : "Product defects",
+    "status" : "FAILED",
+    "defects" : [ ]
+  }, {
+    "title" : "Test defects",
+    "status" : "BROKEN",
+    "defects" : [ {
+      "uid" : "a6737f53830fcc9f",
+      "failure" : {
+        "message" : "IllegalArgumentException: can't parse argument number: threshold",
+        "stackTrace" : "java.lang.IllegalArgumentException: can't parse argument number: threshold\n\tat java.text.MessageFormat.makeFormat(MessageFormat.java:1429)\n\tat java.text.MessageFormat.applyPattern(MessageFormat.java:479)\n\tat java.text.MessageFormat.<init>(MessageFormat.java:362)\n\tat java.text.MessageFormat.format(MessageFormat.java:840)\n\tat ru.yandex.qatools.allure.aspects.AllureAspectUtils.getTitle(AllureAspectUtils.java:68)\n\tat ru.yandex.qatools.allure.aspects.AllureStepsAspects.createTitle(AllureStepsAspects.java:69)\n\tat ru.yandex.qatools.allure.aspects.AllureStepsAspects.stepStart(AllureStepsAspects.java:41)\n\tat yandex.market.steps.ProductPageSteps.checkItemsQuantity(ProductPageSteps.java:46)\n\tat yandex.market.steps.CucumberSteps.товаров_больше_чем(CucumberSteps.java:71)\n\tat ✽.Тогда товаров >= '12'(yandexTV.feature:20)\nCaused by: java.lang.NumberFormatException: For input string: \"threshold\"\n\tat java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.lang.Integer.parseInt(Integer.java:580)\n\tat java.lang.Integer.parseInt(Integer.java:615)\n\tat java.text.MessageFormat.makeFormat(MessageFormat.java:1427)\n\tat java.text.MessageFormat.applyPattern(MessageFormat.java:479)\n\tat java.text.MessageFormat.<init>(MessageFormat.java:362)\n\tat java.text.MessageFormat.format(MessageFormat.java:840)\n\tat ru.yandex.qatools.allure.aspects.AllureAspectUtils.getTitle(AllureAspectUtils.java:68)\n\tat ru.yandex.qatools.allure.aspects.AllureStepsAspects.createTitle(AllureStepsAspects.java:69)\n\tat ru.yandex.qatools.allure.aspects.AllureStepsAspects.stepStart(AllureStepsAspects.java:41)\n\tat yandex.market.steps.ProductPageSteps.checkItemsQuantity(ProductPageSteps.java:46)\n\tat yandex.market.steps.CucumberSteps.товаров_больше_чем(CucumberSteps.java:71)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\n"
+      },
+      "testCases" : [ {
+        "uid" : "a482b5fdb719efa3",
+        "name" : "Поиск товара(телевизор) с применением фильтра",
+        "title" : "Поиск товара(телевизор) с применением фильтра",
+        "time" : {
+          "start" : 1618949793619,
+          "stop" : 1618949811672,
+          "duration" : 18053
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    } ]
+  } ]
+}
